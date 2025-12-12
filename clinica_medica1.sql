@@ -50,10 +50,24 @@ Values (123356, 12678999, 'Matheus', 'rua ali', 8394123654,'laboratorial'),
 (1445572, 55678999, 'pedro', 'avenida j', 8394123654,'clinico'),
 (7571178, 1222999, 'luiz', 'rua da aldeia', 8394123654,'clinico');
 
+
+insert into PACIENTE (ID, CPF, Nome, Endereco, Telefone, Tipo_Exame) 
+Values (7533178, 1222299, 'luz', ' rua da alameda', 8394126754,'clinico');
+
+
 insert into MEDICO (CRM, NOME, EMAIL, TELEFONE, DATA_NASC, ESPECIALIZACAO) 
 Values (123456, 'Matheus', 'email1@gmail.com', 8394123654, '1996-12-25', 'Cardiologista'),
 (945632, 'Jão', '2222@gmail.com', 8394123654,'1996-12-25', 'Cardiologista'),
 (1447572, 'pedro', 'email333@gmail.com', 8394123654,'1996-12-25', 'Cardiologista'),
 (7576578, 'luiz', 'email3321@gmail.com', 8394123654,'1996-12-25', 'Cardiologista');
+
+DELETE FROM PACIENTE
+where ID = 7571178;
+
+update PACIENTE
+set TELEFONE = 111111111
+WHERE ID = 7533178;
+
+
 
 
